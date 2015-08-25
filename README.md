@@ -25,8 +25,8 @@ var x = 10000, y = 4000;
 var gridKey = spatialMapper.getKey(x, y);
 console.log('gridKey', gridKey); // gridKey [5,8]
 
-var neighbors = spatialMapper.getNeighbors(x, y);
-console.log('neighbors', neighbors); // neighbors [ '[4,7]','[5,7]','[6,7]','[4,8]','[5,8]','[6,8]','[4,9]','[5,9]','[6,9]' ]
+var gridIds = spatialMapper.getViewGrids(x, y);
+console.log('gridIds', gridIds); // gridIds [ '[4,7]', '[4,8]', '[5,7]', '[5,8]' ]
 
 ```
 
